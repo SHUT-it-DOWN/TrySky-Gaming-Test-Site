@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+.stats {
+  margin: 7.5vh 0;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Lexend";
+}
+.stats div {
+  padding: 2vh;
+  width: 17.5vw;
+}
+.stats div:first-child {
+  border-radius: 50px 0 0 50px;
+}
+.stats div:last-child {
+  border-radius: 0 50px 50px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Bubblegum Sans";
+}
+
+#Warrior h1, #Warrior h2, #Warrior li {
+  color: #C69B6D;
+}
+#Warrior li:hover {
+  border-color: #C69B6D;
+}
+
+#Hunter h1, #Hunter h2, #Hunter li {
+  color: #A9CE77;
+}
+#Hunter li:hover {
+  border-color: #A9CE77;
+}
+
+#Mage h1, #Mage h2, #Mage li {
+  color: #3FC7EB;
+}
+#Mage li:hover {
+  border-color: #3FC7EB;
+}
+
+#Rogue h1, #Rogue h2, #Rogue li {
+  color: #F7EE70;
+}
+#Rogue li:hover {
+  border-color: #F7EE70;
+}
+
+#Priest h1, #Priest h2, #Priest li {
+  color: #FFFFFF;
+}
+#Priest li:hover {
+  border-color: #FFFFFF;
+}
+
+#Warlock h1, #Warlock h2, #Warlock li {
+  color: #8788EE;
+}
+#Warlock li:hover {
+  border-color: #8788EE;
+}
+
+#Paladin h1, #Paladin h2, #Paladin li {
+  color: #F48CBA;
+}
+#Paladin li:hover {
+  border-color: #F48CBA;
+}
+
+#Druid h1, #Druid h2, #Druid li {
+  color: #ff7c0a;
+}
+#Druid li:hover {
+  border-color: #ff7c0a;
+}
+
+#Shaman h1, #Shaman h2, #Shaman li, #Shaman li:hover {
+  color: #197DDE;
+}
+#Shaman li:hover {
+  border-color: #197DDE;
+}
+
+#Monk h1, #Monk h2, #Monk li {
+  color: #00ff98;
+}
+#Monk li:hover {
+  border-color: #00ff98;
+}
+
+#DemonHunter h1, #DemonHunter h2, #DemonHunter li {
+  color: #a94ac8;
+}
+#DemonHunter li:hover {
+  border-color: #a94ac8;
+}
+
+#DeathKnight h1, #DeathKnight h2, #DeathKnight li {
+  color: #c41e3a;
+}
+#DeathKnight li:hover {
+  border-color: #c41e3a;
+}
+
+#Evoker h1, #Evoker h2, #Evoker li {
+  color: #33937f;
+}
+#Evoker li:hover {
+  border-color: #33937f;
+}
+
+body {
+  background-color: #242323;
+}
+
+div.class {
+  margin: 15vh 0;
+}
+div.class h1, div.class h2 {
+  text-align: center;
+}
+div.class h2 {
+  font-family: "Bubblegum Sans";
+  font-size: 2.5em;
+}
+div.class .spec {
+  padding: 5vh 0;
+  margin: 5vh 0;
+}
+div.class .specList li {
+  cursor: pointer;
+}
+div.class .specList li p, div.class .specList li img {
+  pointer-events: none;
+}
+div.class .specList li p {
+  font-family: "Bubblegum Sans";
+  font-size: 2em;
+}
+div.class ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+div.class ul a {
+  font-size: 1.5em;
+  font-family: "Bubblegum Sans";
+  text-decoration-color: transparent;
+  box-shadow: none;
+}
+div.class ul li {
+  display: flex;
+  width: 20vw;
+  background-color: #181818;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  margin: 0 10px;
+  border-radius: 50px;
+  align-items: center;
+  border: solid 5px #303030;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  box-shadow: none;
+}
+div.class ul li img {
+  border-radius: 10px;
+  width: 17.5%;
+  height: 80;
+}
+div.class ul li p {
+  font-size: 1.3em;
+}/*# sourceMappingURL=main.css.map */

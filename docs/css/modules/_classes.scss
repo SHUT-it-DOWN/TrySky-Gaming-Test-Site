@@ -1,0 +1,83 @@
+h1 {
+    font-size: 3rem;
+    font-family: "Bubblegum Sans";
+}
+
+$warrior: #C69B6D;
+$paladin: #F48CBA;
+$hunter: #A9CE77;
+$rogue: #F7EE70;
+$priest: #FFFFFF;
+$shaman: #197DDE;
+$mage: #3FC7EB;
+$warlock: #8788EE;
+$monk: #00ff98;
+$druid: #ff7c0a;
+$demonhunter: #a94ac8;
+$deathknight: #c41e3a;
+$evoker: #33937f;
+
+#Warrior {
+    h1, h2, li { color: $warrior; }
+    li:hover { border-color: $warrior; }
+}
+
+#Hunter {
+    h1, h2, li { color: $hunter; }
+    li:hover { border-color: $hunter; }
+}
+
+#Mage {
+    h1, h2, li { color: $mage; }
+    li:hover { border-color: $mage; }
+}
+
+#Rogue {
+    h1, h2, li { color: $rogue; }
+    li:hover { border-color: $rogue; }
+}
+
+#Priest {
+    h1, h2, li { color: $priest; }
+    li:hover { border-color: $priest; }
+}
+
+#Warlock {
+    h1, h2, li { color: $warlock; }
+    li:hover { border-color: $warlock; }
+}
+
+#Paladin {
+    h1, h2, li { color: $paladin; }
+    li:hover { border-color: $paladin; }
+}
+
+#Druid {
+    h1, h2, li { color: $druid; }
+    li:hover { border-color: $druid; }
+}
+
+#Shaman {
+    h1, h2, li, li:hover { color: $shaman; }
+    li:hover { border-color: $shaman; }
+}
+
+#Monk {
+    h1, h2, li { color: $monk; }
+    li:hover { border-color: $monk; }
+}
+
+#DemonHunter {
+    h1, h2, li { color: $demonhunter; }
+    li:hover { border-color: $demonhunter; }
+}
+
+#DeathKnight {
+    h1, h2, li { color: $deathknight; }
+    li:hover { border-color: $deathknight; }
+}
+
+#Evoker {
+    h1, h2, li { color: $evoker; }
+    li:hover { border-color: $evoker; }
+}

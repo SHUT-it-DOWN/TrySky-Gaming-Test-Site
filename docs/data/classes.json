@@ -1,0 +1,498 @@
+{
+
+
+    "Warrior": {
+
+        "Specs": {
+
+            "Arms": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_warrior_savageblow.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Haste", "Mastery", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/warrior/arms/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps"
+
+            },
+
+            "Fury": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_warrior_innerrage.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Haste", "Versatility", "Critical Strike"],
+                "BiS": "https://www.wowhead.com/guide/classes/warrior/fury/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps"
+
+            },
+
+            "Protection": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_warrior_defensivestance.jpg",
+                "ClassType": "Tank",
+                "StatPriority": ["Haste", "Critical Strike", "Versatility", "Mastery"],
+                "BiS": "https://www.wowhead.com/guide/classes/warrior/protection/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank"
+
+            }
+
+        }
+
+    },
+
+    "Hunter": {
+
+        "Specs": {
+
+            "Beast Mastery": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_hunter_bestialdiscipline.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps"
+
+            },
+
+            "Marksmanship": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_hunter_focusedaim.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps"
+
+            },
+
+            "Survival": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_hunter_camouflage.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps"
+
+            }
+
+        }
+
+    },
+
+    "Mage": {
+
+        "Specs": {
+
+            "Arcane": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_magicalsentry.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/mage/arcane/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps"
+
+            },
+
+            "Fire": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_fire_firebolt02.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Mastery", "Versatility", "Critical Strike"],
+                "BiS": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps"
+
+            },
+
+            "Frost": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_frost_frostbolt02.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Critical Strike", "Mastery", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/mage/frost/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps"
+
+            }
+
+        }
+
+    },
+
+    "Rogue": {
+
+        "Specs": {
+
+            "Assassination": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_rogue_deadlybrew.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps"
+
+            },
+
+            "Outlaw": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_rogue_waylay.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Versatility", "Haste", "Critical Strike", "Mastery"],
+                "BiS": "https://www.wowhead.com/guide/classes/rogue/outlaw/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps"
+
+            },
+
+            "Subtlety": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_stealth.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Versatility", "Critical Strike", "Haste"],
+                "BiS": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps"
+
+            }
+
+        }
+
+    },
+
+    "Priest": {
+
+        "Specs": {
+
+            "Discipline": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_powerwordshield.jpg",
+                "ClassType": "Healer",
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/priest/discipline/talent-builds-pve-healer"
+
+            },
+
+            "Holy": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_guardianspirit.jpg",
+                "ClassType": "Healer",
+                "StatPriority": ["Critical Strike", "Haste", "Mastery", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/priest/holy/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer"
+
+            },
+
+            "Shadow": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_shadow_shadowwordpain.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps"
+
+            }
+
+        }
+
+    },
+
+    "Warlock": {
+
+        "Specs": {
+
+            "Affliction": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_shadow_deathcoil.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/warlock/affliction/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps"
+
+            },
+
+            "Demonology": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_shadow_metamorphosis.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Versatility", "Critical Strike", "Mastery"],
+                "BiS": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps"
+
+            },
+
+            "Destruction": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_shadow_rainoffire.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/warlock/destruction/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps"
+
+            }
+
+        }
+
+    },
+
+    "Paladin": {
+
+        "Specs": {
+
+            "Holy": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_holybolt.jpg",
+                "ClassType": "Healer",
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer"
+
+            },
+
+            "Protection": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_paladin_shieldofthetemplar.jpg",
+                "ClassType": "Tank",
+                "StatPriority": ["Haste", "Mastery", "Versatility", "Critical Strike"],
+                "BiS": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/paladin/protection/talent-builds-pve-tank"
+
+            },
+
+            "Retribution": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_auraoflight.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Haste", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps"
+
+            }
+
+        }
+        
+    },
+
+    "Druid": {
+
+        "Specs": {
+
+            "Balance": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_nature_starfall.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Haste", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps"
+
+            },
+
+            "Feral": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_druid_catform.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Mastery", "Versatility", "Haste"],
+                "BiS": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps"
+
+            },
+
+            "Guardian": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_racial_bearform.jpg",
+                "ClassType": "Tank",
+                "StatPriority": ["Haste", "Versatility", "Mastery", "Critical Strike"],
+                "BiS": "https://www.wowhead.com/guide/classes/druid/guardian/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank"
+
+            },
+
+            "Restoration": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_nature_healingtouch.jpg",
+                "ClassType": "Healer",
+                "StatPriority": ["Haste", "Mastery", "Versatility", "Critical Strike"],
+                "BiS": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer"
+
+            }
+
+        }
+
+    },
+
+    "Shaman": {
+
+        "Specs": {
+
+            "Elemental": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_nature_lightning.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Critical Strike", "Versatility", "Mastery"],
+                "BiS": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps"
+
+            },
+
+            "Enhancement": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_shaman_improvedstormstrike.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps"
+
+            },
+
+            "Restoration": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_nature_magicimmunity.jpg",
+                "ClassType": "Healer",
+                "StatPriority": ["Critical Strike", "Versatility", "Mastery", "Haste"],
+                "BiS": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer"
+
+            }
+
+        }
+
+    },
+
+    "Monk": {
+
+        "Specs": {
+
+            "Brewmaster": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_monk_brewmaster_spec.jpg",
+                "ClassType": "Tank",
+                "StatPriority": ["Versatility", "Critical Strike", "Mastery", "Haste"],
+                "BiS": "https://www.wowhead.com/guide/classes/monk/brewmaster/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank"
+
+            },
+
+            "Mistweaver": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_monk_mistweaver_spec.jpg",
+                "ClassType": "Healer",
+                "StatPriority": ["Haste", "Versatility", "Critical Strike", "Mastery"],
+                "BiS": "https://www.wowhead.com/guide/classes/monk/mistweaver/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer"
+
+            },
+
+            "Windwalker": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_monk_windwalker_spec.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Versatility", "Critical Strike", "Mastery"],
+                "BiS": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps"
+
+            }
+
+        }
+
+    },
+
+    "Demon Hunter": {
+
+        "Specs": {
+
+            "Havoc": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_specdps.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps"
+
+            },
+
+            "Vengeance": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_spectank.jpg",
+                "ClassType": "Tank",
+                "StatPriority": ["Haste", "Critical Strike", "Versatility", "Mastery"],
+                "BiS": "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank"
+
+            }
+
+        }
+
+    },
+
+    "Death Knight": {
+
+        "Specs": {
+
+            "Blood": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_bloodpresence.jpg",
+                "ClassType": "Tank",
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank"
+
+            },
+
+            "Frost": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_frostpresence.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/death-knight/frost/talent-builds-pve-dps"
+
+            },
+
+            "Unholy": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_unholypresence.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Haste", "Mastery", "Versatility", "Critical Strike"],
+                "BiS": "https://www.wowhead.com/guide/classes/death-knight/unholy/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/death-knight/unholy/talent-builds-pve-dps"
+
+            }
+
+        }
+
+    },
+
+    "Evoker": {
+
+        "Specs": {
+
+            "Augmentation": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/classicon_evoker_augmentation.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/evoker/augmentation/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps"
+
+            },
+
+            "Devastation": {
+
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/classicon_evoker_devastation.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/evoker/devastation/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps"
+
+            },
+
+            "Preservation": {
+                
+                "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/classicon_evoker_preservation.jpg",
+                "ClassType": "Healer",
+                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"],
+                "BiS": "https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear",
+                "SkillTree": "https://www.wowhead.com/guide/classes/evoker/preservation/talent-builds-pve-healer"
+
+            }
+
+        }
+
+    }
+
+}
