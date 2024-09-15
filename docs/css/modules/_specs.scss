@@ -1,52 +1,49 @@
 body {
     background-color: #242323;
+    // display: flex;
+}
+
+#classes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+#stats {
+    width: 24vw;
 }
 
 div.class {
 
-    margin: 15vh 0;
+    margin-top: 2vh;
+    width: 32vw;
+
 
     h1, h2 {
         text-align: center;
     }
 
+    h1 {
+        font-size: 2rem;
+        font-family: "Lexend";
+    }
+
     h2 {
         font-family: "Bubblegum Sans";
         font-size: 2.5em;
+        margin-top: 0;
     }
 
-    .spec {
-        padding: 5vh 0;
-        margin: 5vh 0;
-    }
+    
 
     .specList {
 
-        li {
-
-            // Prevents the img and p click events, when li is clicked
-            cursor: pointer;
-            p, img { pointer-events: none; }
-            
-            p {
-                font-family: "Bubblegum Sans";
-                font-size: 2em;
-            }
-        }
-        
-
-    }
-
-
-    ul {
-        
         display: flex;
         justify-content: center;
         list-style-type: none;
-
-
-        
-        
 
         a {
             font-size: 1.5em;
@@ -56,11 +53,18 @@ div.class {
         }
 
         li {
+
+            // Prevents the img and p click events, when li is clicked
+            cursor: pointer;
+            p, img { pointer-events: none; }
+
             display: flex;
-            width: 20vw;
+            width: 30%;
+            height: 3.5vh;
+            padding: 0 2vw;
             background-color: #181818;
             justify-content: space-evenly;
-            padding: 10px 0;
+            padding: 3px 0;
             margin: 0 10px;
             border-radius:  50px;
             align-items: center;
@@ -68,11 +72,12 @@ div.class {
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
             text-decoration: none;
             box-shadow: none;
-
+    
+            p {
+                font-family: "Bubblegum Sans";
+                font-size: 1em;
+            }
             
-            
-            
-
             img {
                 // position: relative;
                 border-radius: 10px;
@@ -80,12 +85,15 @@ div.class {
                 height: 80;
             }
 
-            p {
-                font-size: 1.3em;
-            }
         }
+        
 
     }
 
 
+}
+
+.spec {
+    padding: 5vh 0;
+    margin: 5vh 0;
 }

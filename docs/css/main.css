@@ -4,30 +4,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
-.stats {
-  margin: 7.5vh 0;
+#specs {
+  width: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.spec {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #181818;
+  position: absolute;
+  height: 85vh;
+  border-radius: 30px;
+  top: 5%;
+  right: 3%;
+}
+.spec img {
+  width: 100%;
+  height: auto;
+}
+
+.specLinks {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+}
+.specLinks .link {
+  background-color: #242323;
+  font-family: "Bubblegum Sans";
+  font-size: 1.5em;
+  width: 75%;
+  padding: 5px 25px;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 3px #303030;
+}
+.specLinks a {
+  text-decoration: none;
+}
+
+#stats {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 25vw;
+  height: 100vh;
+  background-color: #181818;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+#stats .spec {
+  display: flex;
+}
+
+.statBar {
+  position: relative;
+  width: 85%;
+  margin: 7% 0;
   color: white;
-  font-size: 2em;
+  font-size: 0.85em;
   display: flex;
   align-content: center;
   text-align: center;
   justify-content: center;
   font-family: "Lexend";
 }
-.stats div {
-  padding: 2vh;
-  width: 17.5vw;
+.statBar div {
+  padding: 12px;
+  width: 25%;
 }
-.stats div:first-child {
+.statBar div:first-child {
   border-radius: 50px 0 0 50px;
 }
-.stats div:last-child {
+.statBar div:last-child {
   border-radius: 0 50px 50px 0;
-}
-
-h1 {
-  font-size: 3rem;
-  font-family: "Bubblegum Sans";
 }
 
 #Warrior h1, #Warrior h2, #Warrior li {
@@ -125,47 +186,55 @@ body {
   background-color: #242323;
 }
 
+#classes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#stats {
+  width: 24vw;
+}
+
 div.class {
-  margin: 15vh 0;
+  margin-top: 2vh;
+  width: 32vw;
 }
 div.class h1, div.class h2 {
   text-align: center;
 }
+div.class h1 {
+  font-size: 2rem;
+  font-family: "Lexend";
+}
 div.class h2 {
   font-family: "Bubblegum Sans";
   font-size: 2.5em;
+  margin-top: 0;
 }
-div.class .spec {
-  padding: 5vh 0;
-  margin: 5vh 0;
-}
-div.class .specList li {
-  cursor: pointer;
-}
-div.class .specList li p, div.class .specList li img {
-  pointer-events: none;
-}
-div.class .specList li p {
-  font-family: "Bubblegum Sans";
-  font-size: 2em;
-}
-div.class ul {
+div.class .specList {
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
-div.class ul a {
+div.class .specList a {
   font-size: 1.5em;
   font-family: "Bubblegum Sans";
   text-decoration-color: transparent;
   box-shadow: none;
 }
-div.class ul li {
+div.class .specList li {
+  cursor: pointer;
   display: flex;
-  width: 20vw;
+  width: 30%;
+  height: 3.5vh;
+  padding: 0 2vw;
   background-color: #181818;
   justify-content: space-evenly;
-  padding: 10px 0;
+  padding: 3px 0;
   margin: 0 10px;
   border-radius: 50px;
   align-items: center;
@@ -174,11 +243,28 @@ div.class ul li {
   text-decoration: none;
   box-shadow: none;
 }
-div.class ul li img {
+div.class .specList li p, div.class .specList li img {
+  pointer-events: none;
+}
+div.class .specList li p {
+  font-family: "Bubblegum Sans";
+  font-size: 1em;
+}
+div.class .specList li img {
   border-radius: 10px;
   width: 17.5%;
   height: 80;
 }
-div.class ul li p {
-  font-size: 1.3em;
+
+.spec {
+  padding: 5vh 0;
+  margin: 5vh 0;
+}
+
+#classInfo {
+  display: flex;
+}
+
+html {
+  scrollbar-width: none;
 }/*# sourceMappingURL=main.css.map */

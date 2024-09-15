@@ -14,14 +14,17 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data) {
                         
-            $.each(data, function(originalClassType, data) {
+            $.each(data, function(originalClassName, data) {
 
-                let classType = originalClassType.replace(" ", "")
+                let className = originalClassName.replace(" ", "")
 
                 // Adds character class div, header, and list of specializations
-                $("#classes").append(`<div class="class" id="${classType}" ></div>`);
-                $(`#${classType}`).append("<h1>" + classType + "</h1>");
-                $(`#${classType}`).append("<ul class='specList'></ul>");
+                $("#classes").append(`<div class="class" id="${className}" ></div>`);
+                $(`#${className}`).append("<h1>" + originalClassName + "</h1>");
+                $(`#${className}`).append("<ul class='specList'></ul>");
+
+                $("#specs").append(`<div class="class" id="${className}"></div>`);
+                
                 
                 $.each(data, function(classSpec, classData) {
 
@@ -30,26 +33,32 @@ $(document).ready(function() {
                         let specName = originalSpecName.replace(" ", "")
 
                         // Add each specialization to the list of specializations
-                        $(`#${classType} > ul`).append(`<li id="${specName}"><img src="${specData['SpecIcon']}"/><p>${originalSpecName}</p></li>`);
+                        $(`#classes > #${className} > ul`).append(`<li id="${specName}"><img src="${specData['SpecIcon']}"/><p>${originalSpecName}</p></li>`);
 
-                        $(`#${classType}`).append(`<div class="spec" id="${specName}"></div>`);
 
-                        console.log(`#${classType} > #${specName}`)
+                        $(`#specs > #${className}`).append(`<div class="spec" id="${specName}"></div>`);
 
-                        $(`#${classType} > #${specName}`).append("<h2>" + originalSpecName + "</h2>");
-                        $(`#${classType} > #${specName}`).append("<ul></ul>");
 
-                        $(`#${classType} > #${specName} > p`).after("<div class='stats'></div>");
-                        $(`#${classType} > #${specName}`).append("<div class='stats'></div>");
+
+
+                        $(`#specs > #${className} > #${specName}`).append(`<h2>${originalSpecName} ${originalClassName}</h2>`);
+                        $(`#specs > #${className} > #${specName}`).append(`<img src="../imgs/banners/${className.toLowerCase()}_${specName.toLowerCase()}_banner.jpg">`);
+
+                        $(`#specs > #${className} > #${specName}`).append("<ul></ul>");
+
+                        // $(`#specs > ul#${className} > #${specName}`).after("<div class='stats'></div>");
+                        $(`#specs > #${className} > #${specName}`).append("<div class='statBar'></div>");
 
                         // Add each stat to stats div, along with the associated color to go along with it.
                         specData['StatPriority'].forEach(stat => {
-                            $(`#${classType} > #${specName} > div.stats `).append(`<div style="background-color: ${statColors[stat]};">${stat}</div>`);
+                            $(`#specs > #${className} > #${specName} > div.statBar`).append(`<div style="background-color: ${statColors[stat]};">${stat}</div>`);
                         });
 
+                        $(`#specs > #${className} > #${specName}`).append("<ul class='specLinks'></ul>");
+
                         // Append BiS and SkillTree Links to current spec
-                        $(`#${classType} > #${specName} > ul`).append(`<a href='${specData['SkillTree']}' target='_blank'><li>Talent Tree</li></a>`);
-                        $(`#${classType} > #${specName} > ul`).append(`<a href='${specData['BiS']}' target='_blank'><li>BiS Armor</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='${specData['SkillTree']}' target='_blank'><li class='link'>Talent Tree</li></a>`);
+                        $(`#specs > #${className} > #${specName} .specLinks`).append(`<a href='${specData['BiS']}' target='_blank'><li class='link'>BiS Armor</li></a>`);
 
                     })
                     
@@ -63,12 +72,15 @@ $(document).ready(function() {
         
         // Hide all the subclasses, until one is clicked
         $(".spec").hide();
+        $(".spec").hide();
 
     });
 });
 
 
-
+// $(window).scroll(function() {
+//     $('div').stop(true, true);
+// });
 
 
 
@@ -76,42 +88,79 @@ $(document).on('click', '.specList > li', function(event) {
 
     // Reset all the borders and hide any subclasses that are open
 
+    // console.log($(this).attr("id"));
 
-    let thisClass = $(this).attr("class");
+    // let thisClass = $(this).attr("class");
 
-    if (thisClass == "selected") {
-        $(this).css("border", "solid 5px #303030");
-        $(this).parent().parent().find(`.spec`).slideUp(750);
-        $(this).removeAttr("class");
-    }
+    // if (thisClass == "selected") {
+    //     $(this).css("border-color", "#303030");
+    //     // $(this).parent().parent().find(`.spec`).slideUp(750);
 
-    thisClass == "selected" ? $("li").removeClass("selected") : $(this).addClass("selected");
+    //     $("#classes").animate({ width: "100vw"}, 750);
+    //     $("#specs").animate({ width: "0vw"}, 750);
+    //     $(".spec").animate({ width: "0vw", display: `none`, border: 0}, 750);
 
-    $("li").css("border", "solid 5px #303030");
-    $(".spec").hide();
+    //     $("#classes > li").removeAttr("class");
+    //     $(this).removeAttr("class");
+    //     return;
+    // }
+
+    // thisClass == "selected" ? $("li").removeClass("selected") : $(this).addClass("selected");
+
+    // $("li").css("border", "solid 5px #303030");
+    // $(".spec").hide();
 
     
 
     if (event.target === this) {
 
-        let classID = $(this).attr("id");
+        let className = $(this).parent().parent().attr("id");
+        let specName = $(this).attr("id");
         let classColor = $(this).find("p").css("color")
-            
+
+        if ($(this).attr("class") == "selected") {
+            $(".specList > li").removeClass().css("border", "solid 5px #303030");
+            $("#classes").animate({ width: "100vw"}, 750);
+            $(".spec").animate({ width: "0vw", display: `none`, border: 0}, 750);
+            $("#specs").animate({ width: "0vw"}, 750);
+            return;
+        }
+
+        // Check if spec panel is already open
+        if ($("#specs").width() != 0) {
+            $(".spec").css("z-index", 0);
+            $(".specList > li").removeClass().css("border", "solid 5px #303030");
+        }
+
+        
+        // Change the border color of the selected class
+        $(this).attr("class", "selected");
         $(this).css("border-color", classColor);
+        
 
-        $(this).parent().parent().find(`div#${classID}`).show();
-        // $("html, body").scrollTop($(this).offset().top - 200);
+        $(`#specs > #${className} > #${specName}`).show().css({
+            "border": `7px solid ${classColor}`,
+            "width": "32vw",
+            "z-index": 5
+        });;
+        // $(`#specs > #${className} > #${specName}`)
 
-        let parentElement = $(this).parent().parent();
+        let specInfo = $(`#specs > #${className} > #${specName} > h2`)
 
-
-        // $(this).animate({
-        //     scrollTop: parentElement.offset().top - 100
-        // }, 750);
+        if ($("#specs").width() == 0) {
+            $("#classes").animate({ width: "65vw"}, 750);
+            $("#specs").animate({ width: "35vw"}, 750);
+        }
 
         $('html, body').animate({
-            scrollTop: parentElement.offset().top - 100
+            scrollTop: specInfo.offset().top - 65
         }, 750);
 
     }
+
+
+    // $(window).on('scroll', function() {
+    //     $('html, body').stop(true, true);
+    // });
+
 });

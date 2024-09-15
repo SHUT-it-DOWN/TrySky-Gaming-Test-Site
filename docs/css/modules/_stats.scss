@@ -1,8 +1,91 @@
-.stats {
+#specs {
 
-    margin: 7.5vh 0;
+    width: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+.spec {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // height: 100vh;
+    background: #181818;
+    position: absolute;
+    height: 85vh;
+    // border: 7px solid rgb(48, 48, 48);
+    // border-right: none;
+    border-radius: 30px;
+
+    top: 5%;
+    right: 3%;
+    // transform: translate(-50%, -50%);
+
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.specLinks {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+
+    .link {
+        background-color: #242323;
+        font-family: "Bubblegum Sans";
+        font-size: 1.5em;
+        width: 75%;
+        padding: 5px 25px;
+        text-align: center;
+        border-radius: 10px;
+        border: solid 3px #303030;
+        
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+
+// STAT BAR
+#stats {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 25vw;
+    height: 100vh;
+    background-color: #181818;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+    .spec {
+        display: flex;
+    }
+}
+
+
+.statBar {
+
+    position: relative;
+    width: 85%;
+    margin: 7% 0;
     color: white;
-    font-size: 2em;
+    font-size: .85em;
     display: flex;
     align-content: center;
     text-align: center;
@@ -10,8 +93,8 @@
     font-family: "Lexend";
 
     div {
-        padding: 2vh;
-        width: 17.5vw;
+        padding: 12px;
+        width: 25%;
     }
 
     div:first-child {
