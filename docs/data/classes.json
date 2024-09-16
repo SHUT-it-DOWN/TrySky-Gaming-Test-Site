@@ -41,7 +41,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_hunter_bestialdiscipline.jpg",
                 "ClassType": "DPS",
-                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"]
+                "StatPriority": ["Haste", "Critical Strike", "Mastery", "Versatility"]
 
             },
 
@@ -145,7 +145,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_holy_guardianspirit.jpg",
                 "ClassType": "Healer",
-                "StatPriority": ["Critical Strike", "Haste", "Mastery", "Versatility"]
+                "StatPriority": ["Critical Strike", "Mastery", "Versatility", "Haste"]
 
             },
 
@@ -209,7 +209,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_paladin_shieldofthetemplar.jpg",
                 "ClassType": "Tank",
-                "StatPriority": ["Haste", "Mastery", "Versatility", "Critical Strike"]
+                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"]
 
             },
 
@@ -233,7 +233,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_nature_starfall.jpg",
                 "ClassType": "DPS",
-                "StatPriority": ["Mastery", "Haste", "Critical Strike", "Versatility"]
+                "StatPriority": ["Mastery", "Haste", "Versatility", "Critical Strike"]
 
             },
 
@@ -241,7 +241,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_druid_catform.jpg",
                 "ClassType": "DPS",
-                "StatPriority": ["Critical Strike", "Mastery", "Versatility", "Haste"]
+                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"]
 
             },
 
@@ -249,7 +249,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_racial_bearform.jpg",
                 "ClassType": "Tank",
-                "StatPriority": ["Haste", "Versatility", "Mastery", "Critical Strike"]
+                "StatPriority": ["Versatility", "Haste", "Critical Strike", "Mastery"]
 
             },
 
@@ -313,7 +313,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_monk_mistweaver_spec.jpg",
                 "ClassType": "Healer",
-                "StatPriority": ["Haste", "Versatility", "Critical Strike", "Mastery"]
+                "StatPriority": ["Haste", "Critical Strike", "Versatility", "Mastery"]
 
             },
 
@@ -337,7 +337,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_specdps.jpg",
                 "ClassType": "DPS",
-                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"]
+                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"]
 
             },
 
@@ -361,7 +361,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_bloodpresence.jpg",
                 "ClassType": "Tank",
-                "StatPriority": ["Haste", "Mastery", "Critical Strike", "Versatility"]
+                "StatPriority": [ "Critical Strike", "Versatility", "Mastery", "Haste"]
 
             },
 
@@ -401,7 +401,7 @@
 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/classicon_evoker_devastation.jpg",
                 "ClassType": "DPS",
-                "StatPriority": ["Critical Strike", "Mastery", "Haste", "Versatility"]
+                "StatPriority": ["Critical Strike", "Haste", "Mastery", "Versatility"]
 
             },
 
@@ -409,7 +409,7 @@
                 
                 "SpecIcon": "https://render.worldofwarcraft.com/us/icons/56/classicon_evoker_preservation.jpg",
                 "ClassType": "Healer",
-                "StatPriority": ["Mastery", "Critical Strike", "Haste", "Versatility"]
+                "StatPriority": ["Mastery", "Critical Strike", "Versatility", "Haste"]
 
             }
 
