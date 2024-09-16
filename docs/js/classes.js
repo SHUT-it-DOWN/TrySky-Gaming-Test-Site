@@ -32,6 +32,10 @@ $(document).ready(function() {
 
                         let specName = originalSpecName.replace(" ", "")
 
+                        let urlClass = originalClassName.toLowerCase().replace(" ", "-");
+                        let urlSpec = originalSpecName.toLowerCase().replace(" ", "-");
+                        let urlClassType = specData['ClassType'].toLowerCase();
+
                         // Add each specialization to the list of specializations
                         $(`#classes > #${className} > ul`).append(`<li id="${specName}"><img src="${specData['SpecIcon']}"/><p>${originalSpecName}</p></li>`);
 
@@ -42,9 +46,7 @@ $(document).ready(function() {
 
 
                         $(`#specs > #${className} > #${specName}`).append(`<h2>${originalSpecName} ${originalClassName}</h2>`);
-                        $(`#specs > #${className} > #${specName}`).append(`<img src="../imgs/banners/${className.toLowerCase()}_${specName.toLowerCase()}_banner.jpg">`);
-
-                        $(`#specs > #${className} > #${specName}`).append("<ul></ul>");
+                        $(`#specs > #${className} > #${specName}`).append(`<img src="./imgs/banners/${className.toLowerCase()}_${specName.toLowerCase()}_banner.jpg">`);
 
                         // $(`#specs > ul#${className} > #${specName}`).after("<div class='stats'></div>");
                         $(`#specs > #${className} > #${specName}`).append("<div class='statBar'></div>");
@@ -56,9 +58,23 @@ $(document).ready(function() {
 
                         $(`#specs > #${className} > #${specName}`).append("<ul class='specLinks'></ul>");
 
-                        // Append BiS and SkillTree Links to current spec
-                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='${specData['SkillTree']}' target='_blank'><li class='link'>Talent Tree</li></a>`);
-                        $(`#specs > #${className} > #${specName} .specLinks`).append(`<a href='${specData['BiS']}' target='_blank'><li class='link'>BiS Armor</li></a>`);
+
+                        
+
+                        console.log(urlClass, urlSpec, urlClassType);
+
+                        // Append Useful Links
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/talent-builds-pve-${urlClassType}' target='_blank'><li class='link'>Talent Tree</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/bis-gear' target='_blank'><li class='link'>BiS Armor</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/tier-set-bonuses' target='_blank'><li class='link'>Tier Set</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/cheat-sheet' target='_blank'><li class='link'>Cheat Sheet</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/hero-talents' target='_blank'><li class='link'>Hero Talents</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/rotation-cooldowns-pve-${urlClassType}' target='_blank'><li class='link'>Rotation</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/abilities-talents-pve-${urlClassType}' target='_blank'><li class='link'>Abilities</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/enchants-gems-pve-${urlClassType}' target='_blank'><li class='link'>Consumables</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/overview-pve-${urlClassType}' target='_blank'><li class='link'>Overview</li></a>`);
+                        // $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/stat-priority-pve-${urlClassType}' target='_blank'><li class='link'>Stats</li></a>`);
+                        $(`#specs > #${className} > #${specName} > .specLinks`).append(`<a href='https://www.wowhead.com/guide/classes/${urlClass}/${urlSpec}/best-weakauras-macros-addons' target='_blank'><li class='link'>WA & Addons</li></a>`);
 
                     })
                     
