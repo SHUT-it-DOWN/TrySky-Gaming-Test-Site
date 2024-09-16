@@ -32,6 +32,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
@@ -41,12 +42,14 @@
 .specLinks .link {
   background-color: #242323;
   font-family: "Bubblegum Sans";
-  font-size: 1.5em;
-  width: 75%;
+  font-size: clamp(1em, 1.5vw, 1.5em);
+  width: auto;
+  margin: 7px;
   padding: 5px 25px;
   text-align: center;
   border-radius: 10px;
   border: solid 3px #303030;
+  padding: 7px;
 }
 .specLinks a {
   text-decoration: none;
@@ -95,91 +98,91 @@
   color: #C69B6D;
 }
 #Warrior li:hover {
-  border-color: #C69B6D;
+  border-color: #C69B6D !important;
 }
 
 #Hunter h1, #Hunter h2, #Hunter li {
   color: #A9CE77;
 }
 #Hunter li:hover {
-  border-color: #A9CE77;
+  border-color: #A9CE77 !important;
 }
 
 #Mage h1, #Mage h2, #Mage li {
   color: #3FC7EB;
 }
 #Mage li:hover {
-  border-color: #3FC7EB;
+  border-color: #3FC7EB !important;
 }
 
 #Rogue h1, #Rogue h2, #Rogue li {
   color: #F7EE70;
 }
 #Rogue li:hover {
-  border-color: #F7EE70;
+  border-color: #F7EE70 !important;
 }
 
 #Priest h1, #Priest h2, #Priest li {
   color: #FFFFFF;
 }
 #Priest li:hover {
-  border-color: #FFFFFF;
+  border-color: #FFFFFF !important;
 }
 
 #Warlock h1, #Warlock h2, #Warlock li {
   color: #8788EE;
 }
 #Warlock li:hover {
-  border-color: #8788EE;
+  border-color: #8788EE !important;
 }
 
 #Paladin h1, #Paladin h2, #Paladin li {
   color: #F48CBA;
 }
 #Paladin li:hover {
-  border-color: #F48CBA;
+  border-color: #F48CBA !important;
 }
 
 #Druid h1, #Druid h2, #Druid li {
   color: #ff7c0a;
 }
 #Druid li:hover {
-  border-color: #ff7c0a;
+  border-color: #ff7c0a !important;
 }
 
 #Shaman h1, #Shaman h2, #Shaman li, #Shaman li:hover {
   color: #197DDE;
 }
 #Shaman li:hover {
-  border-color: #197DDE;
+  border-color: #197DDE !important;
 }
 
 #Monk h1, #Monk h2, #Monk li {
   color: #00ff98;
 }
 #Monk li:hover {
-  border-color: #00ff98;
+  border-color: #00ff98 !important;
 }
 
 #DemonHunter h1, #DemonHunter h2, #DemonHunter li {
   color: #a94ac8;
 }
 #DemonHunter li:hover {
-  border-color: #a94ac8;
+  border-color: #a94ac8 !important;
 }
 
 #DeathKnight h1, #DeathKnight h2, #DeathKnight li {
   color: #c41e3a;
 }
 #DeathKnight li:hover {
-  border-color: #c41e3a;
+  border-color: #c41e3a !important;
 }
 
 #Evoker h1, #Evoker h2, #Evoker li {
   color: #33937f;
 }
 #Evoker li:hover {
-  border-color: #33937f;
+  border-color: #33937f !important;
 }
 
 body {
