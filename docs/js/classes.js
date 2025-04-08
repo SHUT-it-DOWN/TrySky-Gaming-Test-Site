@@ -178,9 +178,11 @@ $(document).on('click', '.specList > li', function(event) {
 
     }
 
-
+    
     // $(window).on('scroll', function() {
     //     $('html, body').stop(true, true);
     // });
 
 });
+
+// Test 
