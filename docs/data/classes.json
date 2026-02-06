@@ -347,6 +347,14 @@
                 "ClassType": "Tank",
                 "StatPriority": ["Haste", "Critical Strike", "Versatility", "Mastery"]
 
+            },
+            
+            "Devourer": {
+                
+                "SpecIcon": "https://wow.zamimg.com/images/wow/icons/large/classicon_demonhunter_void.jpg",
+                "ClassType": "DPS",
+                "StatPriority": ["Mastery", "Haste", "Critical Strike", "Versatility"]
+
             }
 
         }
